@@ -10,7 +10,7 @@ module.exports = {
   devtool: 'cheap-module-source-map',
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.name': JSON.stringify('Nick Levshin'),
+      'process.env.REACT_APP_API_URL': JSON.stringify('http://localhost:8080/'),
     }),
     new ReactRefreshWebpackPlugin(),
   ],
