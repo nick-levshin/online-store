@@ -1,14 +1,16 @@
 import React from 'react';
-import ME from './logo.png';
-import ARROW from './arrow.svg';
+import MyNavbar from './UI/MyNavbar/MyNavbar';
+import MyFooter from './UI/MyFooter/MyFooter';
+import AppRouter from './AppRouter';
+import { BrowserRouter } from 'react-router-dom';
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <div>
-      <h1>
-        React SPA - {process.env.NODE_ENV} {process.env.name}
-      </h1>
-    </div>
+    <BrowserRouter>
+      <MyNavbar />
+      <AppRouter />
+      <MyFooter />
+    </BrowserRouter>
   );
 };
 
