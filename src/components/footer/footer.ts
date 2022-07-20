@@ -18,7 +18,7 @@ class Footer implements IFooter {
 
         const anchorMyGithub = document.createElement('a') as HTMLAnchorElement;
         anchorMyGithub.classList.add('footer__github');
-        anchorMyGithub.href = 'https://github.com/SmSka2021?tab=repositories';
+        anchorMyGithub.href = 'https://github.com/nick-levshin';
         anchorMyGithub.target = '_blank';
 
         const imgGitHub = new Image() as HTMLImageElement;
