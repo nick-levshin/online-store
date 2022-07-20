@@ -1,0 +1,44 @@
+  *::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #080a14;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(15, 15, 107);
+    border-radius: 5px;
+    border: 3px solid orange;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url("./assets/fonts/Inter-Regular.ttf");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url("./assets/fonts/Inter-Bold.ttf");
+    font-weight: 700;
+  }
+
+  body {
+    color: #fff;
+    background: #080a14;
+    background-image: url('./assets/images/fon.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Inter';
+    box-sizing: border-box;
+    border: none;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .body {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }

@@ -1,0 +1,28 @@
+.header__reset {
+   display: flex;
+   flex-direction: row;
+   padding: 10px;
+   justify-content: space-evenly;
+}
+
+.reset__button_filter,
+.reset__button_setting {
+   width: 45%;
+   border-radius: 10px;
+   border: 3px solid rgb(244, 242, 245);
+   background-color: transparent;
+   color: white;
+   height: 40px;
+   cursor: pointer;
+}
+
+.reset__button_filter:hover,
+.reset__button_setting:hover {
+   background-color: rebeccapurple;
+}
+
+.reset__button_filter:active,
+.reset__button_setting:active {
+   box-shadow: 1px 1px 1px 1px whitesmoke;
+   transform: scale(.95);
+}

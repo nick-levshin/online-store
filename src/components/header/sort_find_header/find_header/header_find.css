@@ -1,0 +1,41 @@
+.header__find {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.header__find h2 {
+  margin: 0 0 15px;
+}
+
+.find {
+  border: 1px solid #ccc;
+  height: 24px;
+  display: flex;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+.find__input {
+  border: none;
+  outline: none;
+  height: 24px;
+  width: calc(100% - 35px);
+  margin: 0;
+  background-color: transparent;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.find__button {
+  background-image: url('../../../../assets/images/search3.png');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  border: none;
+  background-color: white;
+}

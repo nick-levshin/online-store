@@ -1,0 +1,88 @@
+.filter__color {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 7px;
+}
+
+.filter__color h5 {
+   font-size: 14px;
+   margin: 0;
+}
+
+.filter__color_red,
+.filter__color_blue,
+.filter__color_green,
+.filter__color_grey,
+.filter__color_white,
+.filter__color_yellow {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   cursor: pointer;
+   border: 5px solid transparent;
+   transition: all .3s ease-in;
+}
+
+.filter__color_red:hover,
+.filter__color_blue:hover,
+.filter__color_green:hover,
+.filter__color_grey:hover,
+.filter__color_white:hover,
+.filter__color_yellow:hover {
+   transform: scale(.9);
+}
+
+.filter__color_red {
+   background-color: red;
+}
+
+.filter__color_blue {
+   background-color: blue;
+}
+
+.filter__color_green {
+   background-color: green;
+}
+
+.filter__color_grey {
+   background-color: grey;
+}
+
+.filter__color_white {
+   background-color: white;
+}
+
+.filter__color_yellow {
+   background-color: yellow;
+}
+
+.activeColor {
+   border: 5px solid rgb(247, 103, 182);
+}
+
+@media screen and (max-width: 1000px) {
+
+   .filter__color_red,
+   .filter__color_blue,
+   .filter__color_green,
+   .filter__color_grey,
+   .filter__color_white,
+   .filter__color_yellow {
+      width: 15px;
+      height: 15px;
+      border: 2px solid transparent;
+   }
+
+   .filter__color {
+      gap: 5px;
+   }
+
+   .activeColor {
+      border: 2px solid rgb(247, 103, 182);
+   }
+
+   .filter__color h5 {
+      font-size: 12px;
+   }
+}

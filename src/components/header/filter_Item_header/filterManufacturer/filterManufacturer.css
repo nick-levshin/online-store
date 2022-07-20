@@ -1,0 +1,77 @@
+.filter__manufacturer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter__manufacturer h5 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.manufacturer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filter__manufacturer_aist,
+.filter__manufacturer_greenway,
+.filter__manufacturer_stels {
+    width: 35px;
+    height: 35px;
+    min-width: 20px;
+    min-height: 20px;
+    background-size: cover;
+    cursor: pointer;
+    border: 5px solid transparent;
+    background-repeat: no-repeat;
+    transition: all .3s ease-in;
+}
+
+.filter__manufacturer_aist:hover,
+.filter__manufacturer_greenway:hover,
+.filter__manufacturer_stels:hover {
+    transform: scale(.9);
+}
+
+.filter__manufacturer_aist {
+    background-image: url('../../../../assets/images/aist.jpg');
+}
+
+.filter__manufacturer_greenway {
+    background-image: url('../../../../assets/images/greenway.jpg');
+}
+
+.filter__manufacturer_stels {
+    background-image: url('../../../../assets/images/stels.png');
+}
+
+.activeManufacturer {
+    border: 5px solid red;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .filter__manufacturer_aist,
+    .filter__manufacturer_greenway,
+    .filter__manufacturer_stels {
+        width: 25px;
+        height: 25px;
+        border: 2px solid transparent;
+    }
+
+    .filter__manufacturer {
+        gap: 5px;
+    }
+
+    .filter__manufacturer h5 {
+        font-size: 12px;
+    }
+
+    .activeManufacturer {
+        border: 2px solid red;
+    }
+
+}

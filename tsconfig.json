@@ -1,21 +1,23 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "noImplicitAny": true
-  },
-  "include": ["src"]
+    "watch": true,   
+    "target": "es2016",    
+    "module": "commonjs",        
+     "sourceMap": true,
+     "allowJs": true,   
+    "outDir": "./dist",    
+    "rootDir": "./src", 
+   // "esModuleInterop": true,     
+   // "forceConsistentCasingInFileNames": true,           
+    "strict": true,                                 
+    "noImplicitAny": true,                 
+  // "strictNullChecks": true,                        
+   // "strictFunctionTypes": true,                     
+   //  "strictBindCallApply": true,                      
+   // "strictPropertyInitialization": true,             
+  //  "noImplicitThis": true,
+   // "skipLibCheck": true 
+   },
+  "exclude": ["node_modules", "./dist"],
+  "include": [ "./src", "tests.test.ts" ]  
 }

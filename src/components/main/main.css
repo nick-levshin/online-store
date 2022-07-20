@@ -1,0 +1,39 @@
+.main,
+.main__container {
+  width: 100%;
+  min-height: 70vh;
+  margin: 0;
+  padding: 0;
+}
+
+.main__container h3 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    max-width: 64%;
+    min-width: 280px;
+    max-height: 700px;
+    overflow-y: auto;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .main {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    max-width: 56%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main {
+    max-width: 52%;
+  }
+}

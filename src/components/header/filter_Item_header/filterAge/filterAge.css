@@ -1,0 +1,70 @@
+.filter__age {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+}
+
+.filter__age h5 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.filter__age_adult,
+.filter__age_teenage,
+.filter__age_children {
+    width: 35px;
+    height: 35px;
+    min-width: 20px;
+    min-height: 20px;
+    background-size: 100%;
+    cursor: pointer;
+    border: 5px solid transparent;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in;
+}
+
+.filter__age_adult:hover,
+.filter__age_teenage:hover,
+.filter__age_children:hover {
+    transform: scale(.9);
+}
+
+.filter__age_adult {
+    background-image: url('../../../../assets/images/esperanza_3.png');
+}
+
+.filter__age_teenage {
+    background-image: url('../../../../assets/images/esperanza_2.png');
+}
+
+.filter__age_children {
+    background-image: url('../../../../assets/images/esperanza_1.png');
+}
+
+.activeAge {
+    border: 5px solid red;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .filter__age_adult,
+    .filter__age_teenage,
+    .filter__age_children {
+        width: 25px;
+        height: 25px;
+        border: 2px solid transparent;
+    }
+
+    .filter__age {
+        gap: 5px;
+    }
+
+    .activeAge {
+        border: 2px solid red;
+    }
+
+    .filter__age h5 {
+        font-size: 12px;
+    }
+}

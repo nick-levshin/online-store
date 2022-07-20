@@ -1,0 +1,51 @@
+.filter__popular {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.filter__popular_check {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-color: rgb(228, 195, 195);
+    position: relative;
+    display: flex;
+    transition: all 0.3s ease-in;
+}
+
+.filter__popular_check:hover {
+    background-color: rgb(223, 134, 134);
+}
+
+.filter__popular h5 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.activePopular::after {
+    content: '✔';
+    font-weight: 900;
+    font-size: 25px;
+    color: rgb(126, 9, 19);
+    margin: -5px auto 0;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .filter__popular_check {
+        width: 20px;
+        height: 20px;
+    }
+
+    .filter__popular h5 {
+        font-size: 12px;
+    }
+
+    .activePopular::after {
+        font-weight: 700;
+        font-size: 16px;
+        margin: -2px auto 0;
+    }
+}
